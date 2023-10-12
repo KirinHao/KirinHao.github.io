@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>菜单</title>
+    <style>
+        /* CSS规则用于改变按钮的大小 */
+        .custom-button {
+            font-size: 20px; /* 设置按钮文字的字体大小 */
+            padding: 10px 20px; /* 设置按钮的内边距，调整按钮大小 */
+        }
+        /* CSS规则用于修改段落中文字的大小 */
+        .custom-p {
+            font-size: 35px; /* 设置段落中文字的字体大小 */
+        }
+    </style>
+</head>
+<body>
+    <h1>哟，慧慧来吃饭啦！</h1>
+
+    <h2>菜单内容：</h2>
+    <p>苹果, 香蕉, 橙子, 葡萄, 草莓</p>
+
+    <button onclick="随机抽取()" class="custom-button">请点击</button>
+    
+    <h2>抽取结果：</h2>
+    <p id="randomString" class="custom-p"></p>
+    
+    <script>
+        // JavaScript函数，从字符串组中随机抽取一个字符串
+        function 随机抽取() {
+            // 创建一个包含多个字符串的数组
+            var 字符串数组 = ["苹果", "香蕉 ", "橙子", "葡萄", "草莓"];
+            
+            // 生成一个随机索引
+            var 随机索引 = Math.floor(Math.random() * 字符串数组.length);
+            
+            // 获取随机抽取的字符串
+            var 随机字符串 = 字符串数组[随机索引];
+            
+            // 将随机抽取的字符串显示在页面上
+            var randomStringElement = document.getElementById("randomString");
+            // randomStringElement.textContent = "随机抽取的字符串: " + 随机字符串;
+            randomStringElement.textContent =  随机字符串;
+        }
+    </script>
+</body>
+</html>
