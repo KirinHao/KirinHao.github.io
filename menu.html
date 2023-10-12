@@ -6,24 +6,32 @@
     <style>
         /* CSS规则用于改变按钮的大小 */
         .custom-button {
-            font-size: 20px; /* 设置按钮文字的字体大小 */
-            padding: 10px 20px; /* 设置按钮的内边距，调整按钮大小 */
+            font-size: 120px; /* 设置按钮文字的字体大小 */
+            padding: 60px 120px; /* 设置按钮的内边距，调整按钮大小 */
         }
         /* CSS规则用于修改段落中文字的大小 */
         .custom-p {
-            font-size: 35px; /* 设置段落中文字的字体大小 */
+            font-size: 100px; /* 设置段落中文字的字体大小 */
+        }
+        /* CSS规则用于修改标题1中文字的大小 */
+        .custom-h1 {
+            font-size: 160px; /* 设置段落中文字的字体大小 */
+        }
+        /* CSS规则用于修改标题1中文字的大小 */
+        .custom-h2 {
+            font-size: 120px; /* 设置段落中文字的字体大小 */
         }
     </style>
 </head>
 <body>
-    <h1>哟，慧慧来吃饭啦！</h1>
+    <h1 class="custom-h1">哟，慧慧来吃饭啦！</h1>
 
-    <h2>菜单内容：</h2>
-    <p>苹果, 香蕉, 橙子, 葡萄, 草莓</p>
+    <h2 class="custom-h2">菜单内容：</h2>
+    <p class="custom-p">苹果, 香蕉, 橙子, 葡萄, 草莓</p>
 
     <button onclick="随机抽取()" class="custom-button">请点击</button>
     
-    <h2>抽取结果：</h2>
+    <h2 class="custom-h2">抽取结果：</h2>
     <p id="randomString" class="custom-p"></p>
     
     <script>
