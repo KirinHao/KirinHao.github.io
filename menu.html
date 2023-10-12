@@ -10,8 +10,12 @@
             padding: 60px 120px; /* 设置按钮的内边距，调整按钮大小 */
         }
         /* CSS规则用于修改段落中文字的大小 */
-        .custom-p {
+        .custom-p1 {
             font-size: 100px; /* 设置段落中文字的字体大小 */
+        }
+        /* CSS规则用于修改抽取结果中文字的大小 */
+        .custom-p2 {
+            font-size: 120px; /* 设置段落中文字的字体大小 */
         }
         /* CSS规则用于修改标题1中文字的大小 */
         .custom-h1 {
@@ -27,18 +31,18 @@
     <h1 class="custom-h1">哟，慧慧来吃饭啦！</h1>
 
     <h2 class="custom-h2">菜单内容：</h2>
-    <p class="custom-p">苹果, 香蕉, 橙子, 葡萄, 草莓</p>
+    <p class="custom-p1">土豆, 炸薯条, 排骨, 薯片, 鸡腿, 汉堡, 羊肉串, 蒜苔炒肉, 芹菜炒肉</p>
 
     <button onclick="随机抽取()" class="custom-button">请点击</button>
     
     <h2 class="custom-h2">抽取结果：</h2>
-    <p id="randomString" class="custom-p"></p>
+    <p id="randomString" class="custom-p2"></p>
     
     <script>
         // JavaScript函数，从字符串组中随机抽取一个字符串
         function 随机抽取() {
             // 创建一个包含多个字符串的数组
-            var 字符串数组 = ["苹果", "香蕉 ", "橙子", "葡萄", "草莓"];
+            var 字符串数组 = ["土豆", "炸薯条", "排骨", "薯片", "鸡腿", "汉堡", "羊肉串", "蒜苔炒肉", "芹菜炒肉"];
             
             // 生成一个随机索引
             var 随机索引 = Math.floor(Math.random() * 字符串数组.length);
